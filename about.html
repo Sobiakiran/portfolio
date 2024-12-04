@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CV</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+    }
+    /* second section */
+    .cv-container {
+      max-width: 900px;
+      width: 100%;
+      background-color: #fce3e3;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .section {
+      flex: 1;
+      min-width: 250px;
+      padding: 10px;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 5px;
+    }
+
+    .section>p, .section>ul {
+      font-size: 1rem;
+      line-height: 2;
+      color: #555;
+    }
+
+    .section>ul {
+      
+      margin-left: 20px;
+    }
+
+    .skills>ul, .experience>ul, .education>ul {
+      padding-left: 0;
+    }
+
+    .skills li, .experience li, .education li {
+      margin-bottom: 8px;
+    }
+  
+
+    @media (max-width: 770px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .header h1 {
+        font-size: 1.5rem;
+      }
+
+      .header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+
+        <div class="header">
+          <h1>Your name</h1>
+          <p>Full Stack Developer | abc@gmail.com | +92 345 6676789</p>
+        </div>
+
+        <div class="content">
+
+            <!-- Personal Details -->
+             <div class="section personal-details">
+                  <h2>Personal Details</h2>
+                  <p>Address: jutial, gilgit</p>
+                  <p>Email: example@gmail.com</p>
+                  <p>Phone: +92 345 6676789</p>
+             </div>
+
+           <!-- Skills Section -->
+             <div class="section skills">
+                <h2>Skills</h2>
+                  <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js & Express</li>
+                    <li>MongoDB</li>
+                  </ul>
+             </div>
+
+           <!-- Experience Section -->
+             <div class="section experience">
+                <h2>Experience</h2>
+                  <ul>
+                    <li>
+                      <strong>Software Developer</strong> at Tech Company (2022 - Present)
+                      <p>Developed and maintained web applications using the MERN stack.</p>
+                    </li>
+                    <li>
+                      <strong>Front-end Developer</strong> at Web Solutions (2020 - 2022)
+                      <p>Created responsive designs and improved UX for clients' websites.</p>
+                    </li>
+                 </ul>
+             </div>
+
+           <!-- Education Section -->
+             <div class="section education">
+                <h2>Education</h2>
+                  <ul>
+                    <li>
+                      <strong>Bachelor of Computer Science</strong> - University of XYZ (2016 - 2020)
+                    </li>
+                    <li>
+                      <strong>High School Diploma</strong> - Anytown High School (2014 - 2016)
+                    </li>
+                  </ul>
+             </div>
+        </div>
+  </div>
+
+</body>
+</html>

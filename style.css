@@ -1,0 +1,14 @@
+.container{
+    width: 50%;
+    border: solid ;
+    text-align: center;
+    margin: auto;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2%;
+    margin: auto;
+    text-align: center;
+}

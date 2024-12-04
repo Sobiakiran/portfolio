@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    border: solid grey ;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    padding:  10px;
+}
+.name{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(102, 209, 239);
+}
+.name> h1, p{
+    margin: 10px;
+    
+}
+ul{
+    list-style-type: none;
+}
+
+.personal-details{
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+    justify-content: center;
+}
+.detils{
+    width: 30%;
+}
+.education{
+    text-align: center;
+}
+
+@media (max-width:730px){
+
+    .personal-details{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 5px;
+        justify-content: center;  
+    }
+
+    .detils{
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 100%;
+
+        /* flex: 1 0 100%; */
+    }
+
+    
+}
